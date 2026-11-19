@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nowości – Zakątek</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="site-header__top container">
+        <button type="button" class="header-icon menu-toggle" aria-expanded="false" aria-controls="main-nav">
+            <svg class="header-icon__svg" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M3 6h18M3 12h18M3 18h18"/>
+            </svg>
+            <span class="header-icon__label">Menu</span>
+        </button>
+
+        <a class="site-header__logo" href="index.html">Zakątek</a>
+
+        <div class="site-header__actions">
+            <a class="header-icon" href="#">
+                <svg class="header-icon__svg" viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="10.5" cy="10.5" r="6.5"/>
+                    <path d="M15.5 15.5L21 21"/>
+                </svg>
+                <span class="header-icon__label">Szukaj</span>
+            </a>
+            <a class="header-icon header-icon--hide-mobile" href="#">
+                <svg class="header-icon__svg" viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="8" r="4"/>
+                    <path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/>
+                </svg>
+                <span class="header-icon__label">Konto</span>
+            </a>
+            <a class="header-icon header-icon--hide-mobile" href="#">
+                <svg class="header-icon__svg" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 20s-7.5-4.6-9-9.3C2 7.3 4.2 4.5 7.3 4.5c2 0 3.4 1.1 4.7 2.8 1.3-1.7 2.7-2.8 4.7-2.8 3.1 0 5.3 2.8 4.3 6.2-1.5 4.7-9 9.3-9 9.3z"/>
+                </svg>
+                <span class="header-icon__label">Ulubione</span>
+            </a>
+            <button type="button" class="header-icon cart-toggle" aria-expanded="false" aria-controls="mini-cart">
+                <svg class="header-icon__svg" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M5 8h14l-1 13H6L5 8z"/>
+                    <path d="M9 8V6.5a3 3 0 016 0V8"/>
+                </svg>
+                <span class="cart-toggle__count">0</span>
+                <span class="header-icon__label">Koszyk</span>
+            </button>
+        </div>
+    </div>
+
+    <nav id="main-nav" class="main-nav">
+        <a href="#">Kuchnia</a>
+        <a href="#">Dom</a>
+        <a href="#">Papiernicze</a>
+        <a href="#" aria-current="page">Nowości</a>
+        <a href="#">Promocje</a>
+        <a href="#">O nas</a>
+    </nav>
+</header>
+
+<main class="container">
+    <nav class="breadcrumbs" aria-label="Ścieżka nawigacji">
+        <a href="index.html">Sklep</a>
+        <span aria-hidden="true">›</span>
+        <span>Nowości</span>
+    </nav>
+
+    <h1 class="page-title">Nowości <span class="page-title__count">(6 produktów)</span></h1>
+
+    <ul class="product-grid">
+        <li class="product-box">
+            <div class="product-box__image">
+                <span class="product-tag product-tag--new">Nowość</span>
+            </div>
+            <p class="product-box__price">39,99 PLN</p>
+            <h2 class="product-box__title">Kubek ceramiczny „Poranek”</h2>
+            <form class="add-to-cart" method="post" action="/koszyk/dodaj">
+                <input type="hidden" name="product_id" value="101">
+                <input type="hidden" name="qty" value="1">
+                <button type="submit" class="btn btn--primary btn--block">Dodaj do koszyka</button>
+            </form>
+        </li>
+        <li class="product-box">
+            <div class="product-box__image"></div>
+            <p class="product-box__price">49,99 PLN</p>
+            <h2 class="product-box__title">Koszulka bawełniana Basic</h2>
+            <form class="add-to-cart" method="post" action="/koszyk/dodaj">
+                <input type="hidden" name="product_id" value="102">
+                <input type="hidden" name="qty" value="1">
+                <button type="submit" class="btn btn--primary btn--block">Dodaj do koszyka</button>
+            </form>
+        </li>
+        <li class="product-box">
+            <div class="product-box__image">
+                <span class="product-tag">Ostatnie sztuki</span>
+            </div>
+            <p class="product-box__price">24,50 PLN</p>
+            <h2 class="product-box__title">Torba Shopper Eko</h2>
+            <form class="add-to-cart" method="post" action="/koszyk/dodaj">
+                <input type="hidden" name="product_id" value="103">
+                <input type="hidden" name="qty" value="1">
+                <button type="submit" class="btn btn--primary btn--block">Dodaj do koszyka</button>
+            </form>
+        </li>
+        <li class="product-box">
+            <div class="product-box__image"></div>
+            <p class="product-box__price">129,00 PLN</p>
+            <h2 class="product-box__title">Plakat w ramie &lt;Premium&gt; 50×70</h2>
+            <form class="add-to-cart" method="post" action="/koszyk/dodaj">
+                <input type="hidden" name="product_id" value="104">
+                <input type="hidden" name="qty" value="1">
+                <button type="submit" class="btn btn--primary btn--block">Dodaj do koszyka</button>
+            </form>
+        </li>
+        <li class="product-box">
+            <div class="product-box__image">
+                <span class="product-tag product-tag--new">Nowość</span>
+            </div>
+            <p class="product-box__price">34,90 PLN</p>
+            <h2 class="product-box__title">Świeca sojowa Lawenda</h2>
+            <form class="add-to-cart" method="post" action="/koszyk/dodaj">
+                <input type="hidden" name="product_id" value="105">
+                <input type="hidden" name="qty" value="1">
+                <button type="submit" class="btn btn--primary btn--block">Dodaj do koszyka</button>
+            </form>
+        </li>
+        <li class="product-box">
+            <div class="product-box__image"></div>
+            <p class="product-box__price">19,99 PLN</p>
+            <h2 class="product-box__title">Notes w kropki A5</h2>
+            <form class="add-to-cart" method="post" action="/koszyk/dodaj">
+                <input type="hidden" name="product_id" value="106">
+                <input type="hidden" name="qty" value="1">
+                <button type="submit" class="btn btn--primary btn--block">Dodaj do koszyka</button>
+            </form>
+        </li>
+    </ul>
+</main>
+
+<footer class="site-footer">
+    <ul class="site-footer__usp container">
+        <li>Płatność kartą i BLIK</li>
+        <li>Darmowa dostawa od 200 PLN</li>
+        <li>Wysyłka nawet w 24 h</li>
+    </ul>
+    <div class="site-footer__bottom container">
+        <span>© Zakątek</span>
+        <span>Sklep działa na Sellingo</span>
+    </div>
+</footer>
+
+<div id="mini-cart" class="mini-cart" hidden>
+    <div class="mini-cart__overlay"></div>
+    <div class="mini-cart__panel" role="dialog" aria-modal="true" aria-labelledby="mini-cart-title">
+        <div class="mini-cart__header">
+            <h2 id="mini-cart-title" class="mini-cart__title">Koszyk</h2>
+            <button type="button" class="mini-cart__close" aria-label="Zamknij koszyk">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M4 4l16 16M20 4L4 20"/>
+                </svg>
+            </button>
+        </div>
+
+        <div class="mini-cart__body">
+            <p class="mini-cart__count-text" aria-live="polite">Wczytywanie koszyka…</p>
+            <ul class="mini-cart__list"></ul>
+            <div class="mini-cart__empty" hidden>
+                <p>Brak produktów.</p>
+                <p>Kiedy dodasz produkty do koszyka, pojawią się w tym miejscu.</p>
+            </div>
+        </div>
+
+        <div class="mini-cart__footer" hidden>
+            <div class="mini-cart__summary">
+                <span>Razem:</span>
+                <strong class="mini-cart__total"></strong>
+            </div>
+            <a class="btn btn--primary btn--block btn--large" href="#">Przejdź do koszyka</a>
+        </div>
+    </div>
+</div>
+
+<template id="mini-cart-item-template">
+    <li class="mini-cart__item">
+        <div class="mini-cart__thumb"></div>
+        <div class="mini-cart__info">
+            <span class="mini-cart__label">Wartość</span>
+            <span class="mini-cart__price"></span>
+            <span class="mini-cart__name"></span>
+        </div>
+        <button type="button" class="mini-cart__remove" data-action="remove">Usuń</button>
+        <div class="mini-cart__qty">
+            <span class="mini-cart__label">Ilość (szt.):</span>
+            <div class="qty-field">
+                <button type="button" class="qty-btn" data-action="decrease" aria-label="Zmniejsz ilość">−</button>
+                <span class="mini-cart__qty-value"></span>
+                <button type="button" class="qty-btn" data-action="increase" aria-label="Zwiększ ilość">+</button>
+            </div>
+        </div>
+    </li>
+</template>
+
+<div id="notices" class="notices" aria-live="polite"></div>
+
+<script src="js/legacy.js"></script>
+<script src="js/api.js"></script>
+<script src="js/cart.js"></script>
+</body>
+</html>
